@@ -1,5 +1,5 @@
 export class Todo{
-    sno: number
+    sno:number
     title: string
     desc: string
     reminder: boolean
