@@ -1,0 +1,10 @@
+.showTodo{
+    background-color: green;
+    color: white; 
+    padding: .2rem;
+}
+.dontShowTodo{
+    /* display: none;  */
+    background-color:blue;
+
+}
