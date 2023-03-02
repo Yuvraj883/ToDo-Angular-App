@@ -15,9 +15,20 @@ constructor(){
       title:"First Todo",
       desc: "this is the first todo",
       reminder: true
+    },
+    {
+      sno: 2, 
+      title:"First Todo",
+      desc: "this is the first todo",
+      reminder: true
     }
   ]
  
+} 
+deleteTodo(todo:Todo){
+  const index = this.todos.indexOf(todo); 
+  this.todos.splice(index,1)
+  console.log("DeleteTodo"); 
 }
 ngOnInit() : void{
 

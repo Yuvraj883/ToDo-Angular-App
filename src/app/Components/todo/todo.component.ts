@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input,Output } from '@angular/core';
 import {Todo} from "../../Todo"; 
 
 @Component({
@@ -9,4 +9,10 @@ import {Todo} from "../../Todo";
 export class TodoComponent {
   reminder:boolean;
   @Input() todo:Todo; 
+  @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter(); 
+
+  onClick(todo: Todo){
+    this.deleteTodo.emit(todo); 
+    console.log(todo.title); 
+  }
 }

@@ -1,3 +1,4 @@
 li,p{
     color: white; 
+    list-style-type:none;
 }
