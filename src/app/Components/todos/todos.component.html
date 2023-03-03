@@ -1,5 +1,4 @@
 <div>
-    <p>To do component</p>
     <ul *ngFor="let todo of todos">
         <li ><app-todo (deleteTodo)="deleteTodo($event)" [todo]="todo"></app-todo></li>
     </ul>
