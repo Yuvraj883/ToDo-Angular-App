@@ -21,6 +21,12 @@ constructor(){
       title:"First Todo",
       desc: "this is the first todo",
       reminder: true
+    },
+    {
+      sno: 2, 
+      title:"First Todo",
+      desc: "this is the first todo",
+      reminder: true
     }
   ]
  
